@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>1142</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Food and Drink Menu</h1>
+            <article>
+                <div class="form-container">
+                <div class="form-header">
+                    <h3>Food Options</h3>
+                </div>
+                <form>
+                    <div class="form-area">
+                        <div class="form-block">
+                            <p>Meal 1:</p>
+                            <input type="text" id="meal1text" readonly>
+                        </div>
+
+                        <div class="form-block">
+                            <input type="checkbox" id="meal1sauce">
+                            <p>Add Sauce</p>
+                        </div>
+                        
+                        <div class="form-block">
+                            <input type="checkbox" id="meal1ig">
+                            <p>Add Ingredients</p>
+                        </div>
+                    </div>
+
+                    <div class="form-area">
+                        <div class="form-block">
+                            <p>Meal 2:</p>
+                            <input type="text" id="meal2text" readonly>
+                        </div>
+
+                        <div class="form-block">
+                            <input type="checkbox" id="meal2sauce">
+                            <p>Add Sauce</p>
+                        </div>
+                        
+                        <div class="form-block">
+                            <input type="checkbox" id="meal2ig">
+                            <p>Add Ingredients</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <div class="form-header">
+                    <h3>Soft Drinks</h3>
+                </div>
+                <form>
+                    <div class="form-area">
+                        <div class="form-block">
+                            <p>Drink 1:</p>
+                            <input type="text" id="drink1text" readonly>
+                        </div>
+
+                        <div class="form-block">
+                            <input type="radio" name="radio1" id="drink1small">
+                            <p>Small</p>
+                        </div>
+                        
+                        <div class="form-block">
+                            <input type="radio" name="radio1" id="drink1med">
+                            <p>Medium</p>
+                        </div>
+                    </div>
+
+                    <div class="form-area">
+                        <div class="form-block">
+                            <p>Drink 2:</p>
+                            <input type="text" id="drink2text" readonly>
+                        </div>
+
+                        <div class="form-block">
+                            <input type="radio" name="radio2" id="drink2small">
+                            <p>Small</p>
+                        </div>
+                        
+                        <div class="form-block">
+                            <input type="radio" name="radio2" id="drink2med">
+                            <p>Medium</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </article>
+            <div class="toplam-sonuc"><p>Total: </p><input type="text" id="totalTxt" readonly></div>
+            <div class="button-area">
+                <button onclick="showTotal()">Calculate Total</button>
+                <button onclick="reset()">Reset</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

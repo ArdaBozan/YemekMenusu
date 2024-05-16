@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+    cursor: pointer;
+}
+
+button{
+    background-color: hsl(120, 86%, 25%);
+    border: 0;
+    outline: 0;
+    padding: .7em 1em;
+    cursor: pointer;
+    color: #fff;
+    border-radius: .5vh;
+    transition: .3s;
+}
+
+button:is(:hover, :focus-visible){
+    background-color: hsl(120, 86%, 20%);
+}
+
+body{
+    font-family: Arial;
+    background-color: #eeee;
+    color: #202020;
+    min-height: 100vh;
+    font-weight: 600;
+    font-size: 1em;
+    display: grid;
+    place-items: center;
+}
+
+main section{
+    display: grid;
+    place-items: center;
+    gap: 1em;
+}
+
+main section article{
+    display: grid;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px 1px;
+    border-radius: 1vh;
+    overflow: hidden;
+}
+
+main section article .form-container{
+    display: grid;
+}
+
+main section article .form-container:last-child{
+    box-shadow: rgba(0, 0, 0, 0.25) 0 0 5px 1px;
+}
+
+main section article .form-container .form-header{
+    display: flex;
+    justify-content: start;
+    background-color: #eee;
+    padding: .5em .7em;
+}
+
+main section article .form-container .form-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em .7em;
+    gap: 5em;
+}
+
+main section article .form-container .form-area .form-block{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex: 1;
+    min-width: fit-content;
+    gap: .5em;
+}
+
+main section .toplam-sonuc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+}
+
+@media screen and (max-width: 44em){
+    main section article .form-container .form-area{
+        flex-direction: column !important;
+        gap: 1em !important;
+        justify-content: start !important;
+    }
+}
